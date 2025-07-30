@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora IDEB</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo sem fundo.png" alt="Logo Marca">        
+        </header>
+
+        <div class = "linha-laranja"> </div>
+
+        <main>
+            <div class="titulo">Dados/Calculadora do IDEB por escola</div>
+
+            <div class="tabela-container">
+                <!-- Ignez Massad Cola -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Ignez Massad Cola</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.58</td></tr>
+                        <tr><td>Aprovação</td><td>0.94</td></tr>
+                        <tr><td>IDEB</td><td>5.2</td></tr>
+                        <tr><td>META</td><td>4.6</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Presidente Costa e Silva -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Presidente Costa e Silva</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>6.0</td></tr>
+                        <tr><td>Aprovação</td><td>0.97</td></tr>
+                        <tr><td>IDEB</td><td>5.8</td></tr>
+                        <tr><td>META</td><td>5.3</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Maria Ramalhete -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Maria Ramalhete</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.79</td></tr>
+                        <tr><td>Aprovação</td><td>0.96</td></tr>
+                        <tr><td>IDEB</td><td>4.6</td></tr>
+                        <tr><td>META</td><td>5.1</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Benedita Martins -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Benedita Martins</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.27</td></tr>
+                        <tr><td>Aprovação</td><td>0.88</td></tr>
+                        <tr><td>IDEB</td><td>4.6</td></tr>
+                        <tr><td>META</td><td>5.1</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Eliziário Lourenço Dias -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Eliziário Lourenço Dias</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>0</td></tr>
+                        <tr><td>Aprovação</td><td>0</td></tr>
+                        <tr><td>IDEB</td><td>0</td></tr>
+                        <tr><td>META</td><td>0</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Maria Veloso Calmon -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Maria Veloso Calmon</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.42</td></tr>
+                        <tr><td>Aprovação</td><td>0.89</td></tr>
+                        <tr><td>IDEB</td><td>3.9</td></tr>
+                        <tr><td>META</td><td>5.1</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Constantino José Vieira -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Constantino José Vieira</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.44</td></tr>
+                        <tr><td>Aprovação</td><td>0.97</td></tr>
+                        <tr><td>IDEB</td><td>4.3</td></tr>
+                        <tr><td>META</td><td>NC</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Cândida Soares Machado -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Cândida Soares Machado</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.62</td></tr>
+                        <tr><td>Aprovação</td><td>0.98</td></tr>
+                        <tr><td>IDEB</td><td>4.5</td></tr>
+                        <tr><td>META</td><td>5.3</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Darcy Ribeiro -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Darcy Ribeiro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.51</td></tr>
+                        <tr><td>Aprovação</td><td>0.95</td></tr>
+                        <tr><td>IDEB</td><td>4.3</td></tr>
+                        <tr><td>META</td><td>5.5</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Dalzira Meriugetti Merisio -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Dalzira Meriugetti Merisio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.49</td></tr>
+                        <tr><td>Aprovação</td><td>0.96</td></tr>
+                        <tr><td>IDEB</td><td>5.3</td></tr>
+                        <tr><td>META</td><td>4.6</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- João Lima da Conceição -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">João Lima da Conceição</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.33</td></tr>
+                        <tr><td>Aprovação</td><td>0.99</td></tr>
+                        <tr><td>IDEB</td><td>5.3</td></tr>
+                        <tr><td>META</td><td>4.8</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Adalgiza Fernandes Marvilla -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Adalgiza Fernandes Marvilla</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.71</td></tr>
+                        <tr><td>Aprovação</td><td>0.97</td></tr>
+                        <tr><td>IDEB</td><td>5.5</td></tr>
+                        <tr><td>META</td><td>5.1</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Rosa Simões de Almeida -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Rosa Simões de Almeida</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.5</td></tr>
+                        <tr><td>Aprovação</td><td>0.95</td></tr>
+                        <tr><td>IDEB</td><td>5.2</td></tr>
+                        <tr><td>META</td><td> </td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Francisco Araújo -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Francisco Araújo</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.32</td></tr>
+                        <tr><td>Aprovação</td><td>0.94</td></tr>
+                        <tr><td>IDEB</td><td>5.0</td></tr>
+                        <tr><td>META</td><td>5.7</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Marinalva Aragão Amorim -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Marinalva Aragão Amorim</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.67</td></tr>
+                        <tr><td>Aprovação</td><td>0.85</td></tr>
+                        <tr><td>IDEB</td><td>4.8</td></tr>
+                        <tr><td>META</td><td>4.8</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Celita Bastos -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Celita Bastos</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>5.5</td></tr>
+                        <tr><td>Aprovação</td><td>0.95</td></tr>
+                        <tr><td>IDEB</td><td>5.2</td></tr>
+                        <tr><td>META</td><td> </td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Joaõ Batista Celestino -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Joaõ Batista Celestino</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>4.66</td></tr>
+                        <tr><td>Aprovação</td><td>0.87</td></tr>
+                        <tr><td>IDEB</td><td>4.1</td></tr>
+                        <tr><td>META</td><td>3.9</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Arlindo Gobbi -->
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Arlindo Gobbi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NP</td><td>6.04</td></tr>
+                        <tr><td>Aprovação</td><td>1.0</td></tr>
+                        <tr><td>IDEB</td><td>6.0</td></tr>
+                        <tr><td>META</td><td>6.5</td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td>NP</td><td><input type="number" class="inputA" oninput="calcular(this)"></td></tr>
+                        <tr><td>Aprovação</td><td><input type="number" class="inputB" oninput="calcular(this)"></td></tr>
+                        <tr><td>IDEB</td><td><span class="resultado"></span></td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="espaçamento"></div>
+
+            <div class = "linha-laranja"> </div>
+            
+            <div class="titulo">Como é calculado o IDEB?</div>
+
+            <div class="explicacao">
+                <img src="img/ideb.png" alt="Fonte: Ideb, Inep.">
+                <div class="texto-explicativo">
+                    <p>
+                        O Índice de Desenvolvimento da Educação Básica (IDEB) é um indicador criado pelo INEP para medir
+                        a qualidade do ensino nas escolas públicas. <br>
+                        Ele é calculado com base no aprendizado dos alunos em português e matemática (Saeb) e no fluxo escolar (taxa de aprovação).
+                    </p>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
