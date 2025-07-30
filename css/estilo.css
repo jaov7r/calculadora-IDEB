@@ -91,30 +91,55 @@ input[type="number"]:focus {
     font-size: 1.2rem;
 }
 
+.secao-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* responsivo para celular */
+}
+
+/* Lado esquerdo */
 .explicacao {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    flex-wrap: wrap; /* empilha em telas pequenas */
+    flex: 1;
+    min-width: 300px;
 }
 
 .explicacao img {
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
 }
 
-.texto-explicativo {
-    max-width: 500px;
+.texto-explicativo p {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-.texto-explicativo h2 {
-    margin-bottom: 10px;
+/* Lado direito */
+.titulo-secundario {
+    flex: 1;
+    min-width: 300px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-secundario h2 {
+    font-size: 1.8rem;
     color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.titulo-secundario p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
 }
